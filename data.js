@@ -57,7 +57,8 @@ jQuery.extend({
 	},
 
 	removeData: function( elem, name ) {
-		dataUser.remove( elem, name );
+		try { dataUser.remove( elem, name ); }
+		catch ( e ) { console.log( e ); }
 	},
 
 	// TODO: Now that all calls to _data and _removeData have been replaced
