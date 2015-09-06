@@ -56,7 +56,7 @@ jQuery.extend({
 		return dataUser.access( elem, name, data );
 	},
 
-	removeData: function( elem, name ) {
+	deleteData: function( elem, name ) {
 		dataUser.remove( elem, name );
 	},
 
